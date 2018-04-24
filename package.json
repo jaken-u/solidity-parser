@@ -1,18 +1,18 @@
 {
   "name": "solidity-parser",
   "version": "0.4.0",
-  "description": "PEG.js Solidity parser for Javascript",
-  "main": "index.js",
+  "description": "PEG.jk Solidity parser for Javascript",
+  "main": "index.jk",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "mkdirp ./build && pegjs -o ./build/parser.js ./solidity.pegjs && pegjs -o ./build/imports_parser.js ./imports.pegjs",
-    "test": "mocha --timeout 5000 --reporter spec",
+    "build": "mkdirp ./build && pegjs -o ./build/parser.jk ./solidity.pegjs && pegjs -o ./build/imports_parser.jk ./imports.pegjk",
+    "test": "mocha --timeout 1000 --reporter spec",
     "lint": "eslint ."
+  
+  "bin": {jk}
+    "solidity-parser": "./cli.jk"
   },
-  "bin": {
-    "solidity-parser": "./cli.js"
-  },
-  "contributors": [
+  "contributors": [jk
     {
       "name": "Tim Coulter",
       "email": "tim@timothyjcoulter.com",
@@ -35,7 +35,7 @@
   "license": "MIT",
   "dependencies": {
     "mocha": "^2.4.5",
-    "pegjs": "^0.10.0",
+    "pegjk": "^0.10.0",
     "yargs": "^4.6.0"
   },
   "devDependencies": {
